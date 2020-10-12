@@ -1,0 +1,274 @@
+/*--------All Pages--------*/
+
+header{
+    background-color: #2E5077; 
+}
+
+/*--------User Navigation--------*/
+/* Add a blue background color to the user navigation*/
+.UserNav {
+    background-color: #2E5077;
+}
+
+/* Style main navigation bar links*/
+.UserNav a {
+    background-color: #2E5077;
+    float: right;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 120px 20px 10px 20px;
+    font-size: 12pt;
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+
+}
+
+/* Change the color of links on hover */
+.UserNav a:hover {
+    color: #FFA630;
+  }
+
+/* Align Google icons with text */
+.material-icons{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+/*--------Main Site Navigation--------*/
+.MainNav {
+    background-color: #D7E8BA;
+}
+
+/* Style main navigation bar*/
+.MainNav a {
+    background-color: #D7E8BA;
+    float: right;
+    color: #2E5077;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 14pt;
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+    clear: left;
+    border-top: 3px solid #FFA630;
+}
+
+.MainNav a:hover {
+    color: #FFA630;
+  }
+
+.MainNav a.active {
+    font-weight: bold;
+  }
+
+/*--------PRODUCT BROWSING --------*/
+  
+  .productImages{
+    display: inline-block;
+    width: 60%;
+    padding-top: 5%; padding-bottom: 5%;
+  }
+
+  .productImages img{
+    width: 45%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+
+  .productFilter h1{
+    float: left;
+    color: #000000;
+    text-align: left;
+    font-size: 15pt;
+    font-family: 'Barlow', sans-serif;
+    clear: both;
+    padding-bottom: 10px;
+
+  }
+
+  .productFilter{
+    width: 35%;
+    padding-top: 5%; 
+    float: right;
+    vertical-align:top;
+
+
+  }
+
+  .productFilter h2{
+    float: left;
+    color: #000000;
+    text-align: left;
+    font-size: 13pt;
+    font-family: 'Barlow', sans-serif;
+    clear: left;
+    
+
+  }
+  .productFilter button{
+    float: left;
+    color: #ffffff;
+    background-color: #a9a9a9;
+    text-align: left;
+    font-size: 14pt;
+    font-family: 'Barlow', sans-serif;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    margin-right:8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+#help{
+    float: left;
+    font-size: 10pt;
+    font-family: 'Barlow', sans-serif;
+    color: #a9a9a9;
+    clear: both;
+
+}
+/*--------HOMEPAGE --------*/
+
+.homepage{
+  display: inline;
+  text-align: center;
+}
+
+.homepage img{
+  width: 38%;
+  margin: 50px 20px 50px 80px;
+  display: inline;
+  border-radius: 10px;
+  text-align: center;
+
+}
+/*--------PRODUCT DETAILS --------*/
+
+.detailImages{
+  display: inline-block;
+  width: 60%;
+  padding-top: 5%; padding-bottom: 5%;
+  text-align: center;
+}
+
+.detailImages img{
+  width: 90%;
+  display: inline-block;
+  margin-right: 15px;
+
+}
+
+.detailFilter h1{
+  float: left;
+  color: #000000;
+  text-align: left;
+  font-size: 26pt;
+  font-family: 'Barlow', sans-serif;
+  clear: both;
+
+}
+
+.detailFilter{
+  width: 35%;
+  padding-top: 5%; 
+  float: right;
+  vertical-align:top;
+
+
+}
+
+.detailFilter h2{
+  float: left;
+  color: #000000;
+  text-align: left;
+  font-size: 13pt;
+  font-family: 'Barlow', sans-serif;
+  clear: left;
+}
+
+  .detailFilter h3{
+    float: left;
+    color: #000000;
+    text-align: left;
+    font-size: 20pt;
+    font-family: 'Barlow', sans-serif;
+    clear: left;
+  }
+
+.productFilter button{
+  float: left;
+  color: #ffffff;
+  background-color: #a9a9a9;
+  text-align: left;
+  font-size: 14pt;
+  font-family: 'Barlow', sans-serif;
+  border: none;
+  padding: 5px 15px 5px 15px;
+  margin-right:8px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#help{
+  float: left;
+  font-size: 10pt;
+  font-family: 'Barlow', sans-serif;
+  color: #a9a9a9;
+  clear: both;
+
+}
+
+#body{  float: left;
+  font-size: 12pt;
+  font-family: 'Barlow', sans-serif;
+  color: #000000;
+  clear: both;
+  margin-right: 30px;
+
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #a9a9a9;
+  color: #2E5077;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #FFA630;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.footer{
+  margin-top: 5%;
+}
