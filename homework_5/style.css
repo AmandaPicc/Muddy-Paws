@@ -10,8 +10,9 @@ body{
   background-color: #2E5077;
 }
 
-footer{
+.footer{
   margin-top: 5%;
+  height: 150px;
 }
 
 .mainContent{
@@ -150,6 +151,7 @@ footer{
 .homepage{
   display: inline;
   text-align: center;
+  background-color: #ffffff;
 }
 
  /* Style and position images/links*/
