@@ -46,6 +46,7 @@ footer{
 /* Style main navigation bar*/
 .MainNav a {
     background-color: #D7E8BA;
+    width: auto;
     float: right;
     color: #2E5077;
     text-align: left;
