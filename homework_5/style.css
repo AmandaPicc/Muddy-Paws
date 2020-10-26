@@ -1,34 +1,48 @@
 /*--------All Pages--------*/
 
-header{
+.header{
     background-color: #2E5077; 
+    height: 150px;
+    width: 100%;
+}
+
+body{
+  background-color: #2E5077;
 }
 
 footer{
   margin-top: 5%;
 }
 
-/*--------User Navigation--------*/
+.mainContent{
+  background-color: #ffffff;
+}
+
+
 /* Add a blue background color to the user navigation*/
 .UserNav {
     background-color: #2E5077;
+    float: right;
+    width: 100%;
 }
 
 /* Style main navigation bar links*/
 .UserNav a {
-    background-color: #2E5077;
-    float: right;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 120px 20px 10px 20px;
-    font-size: 12pt;
-    font-family: 'Barlow', sans-serif;
-    text-decoration: none;
+  background-color: #2E5077;
+  float: right;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 11pt;
+  font-family: 'Barlow', sans-serif;
+  text-decoration: none;
+  clear: left;
 }
 
 /* Change the color of links on hover */
 .UserNav a:hover {
     color: #FFA630;
+    background-color: #2E5077;
   }
 
 /* Align Google icons with text */
@@ -41,12 +55,14 @@ footer{
 /*--------Main Site Navigation--------*/
 .MainNav {
     background-color: #D7E8BA;
+    float: right;
+    width: 100%;
+    border-top: 3px solid #FFA630;
 }
 
 /* Style main navigation bar*/
 .MainNav a {
     background-color: #D7E8BA;
-    width: auto;
     float: right;
     color: #2E5077;
     text-align: left;
@@ -55,7 +71,6 @@ footer{
     font-family: 'Barlow', sans-serif;
     text-decoration: none;
     clear: left;
-    border-top: 3px solid #FFA630;
 }
 
 .MainNav a:hover {
@@ -267,4 +282,23 @@ footer{
 
 .active:after {
   content: "\2796";
+}
+
+
+/*--------PRODUCT CHECKOUT PAGE --------*/
+.productInfo{
+  font-family: 'Barlow', sans-serif;
+  padding: 20px;
+
+}
+
+.productInfo h1{
+  font-size; 15pt;
+  line-height: 2em;
+
+}
+
+.productInfo p{
+  font-size: 14pt;
+
 }
