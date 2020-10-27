@@ -17,6 +17,7 @@ body{
 
 .mainContent{
   background-color: #ffffff;
+  height: 75%;
 }
 
 
@@ -87,7 +88,7 @@ body{
   .productImages{
     display: inline-block;
     width: 60%;
-    padding-top: 5%; padding-bottom: 5%;
+    padding:1%;
   }
 
   .productImages img{
