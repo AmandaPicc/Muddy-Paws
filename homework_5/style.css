@@ -17,7 +17,7 @@ body{
 
 .mainContent{
   background-color: #ffffff;
-  height: 75%;
+  min-height: 75%;
 }
 
 
@@ -104,6 +104,7 @@ body{
     padding-top: 5%; 
     float: right;
     vertical-align:top;
+    background-color: #ffffff;
   }
 
   .productFilter h1{
@@ -168,7 +169,7 @@ body{
  /* Style and position images*/
 .detailImages{
   display: inline-block;
-  width: 60%;
+  width: 50%;
   padding-top: 5%; padding-bottom: 5%;
   text-align: center;
 }
