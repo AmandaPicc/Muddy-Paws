@@ -17,9 +17,20 @@ body{
 
 .mainContent{
   background-color: #ffffff;
-  min-height: 75%;
+
+  
 }
 
+.mainContent h3{
+  font-size; 8pt;
+  line-height: 2em;
+
+}
+
+.mainContent hr{
+  border-color: #D7E8BA;
+  border-top: .25px;
+}
 
 /* Add a blue background color to the user navigation*/
 .UserNav {
@@ -83,6 +94,11 @@ body{
     font-weight: bold;
   }
 
+  .filters{
+    height: 500px;
+    vertical-align:top;
+  }
+
 /*--------PRODUCT BROWSING --------*/
   /* Style images*/
   .productImages{
@@ -92,19 +108,19 @@ body{
   }
 
   .productImages img{
-    width: 45%;
     padding-right: 10px;
     padding-bottom: 10px;
     display: inline-block;
+    background-color: #ffffff;
   }
 
   /* Style filtering buttons*/
   .productFilter{
     width: 35%;
-    padding-top: 5%; 
     float: right;
     vertical-align:top;
     background-color: #ffffff;
+    clear: both;
   }
 
   .productFilter h1{
@@ -169,9 +185,10 @@ body{
  /* Style and position images*/
 .detailImages{
   display: inline-block;
-  width: 50%;
+  width: 60%;
   padding-top: 5%; padding-bottom: 5%;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .detailImages img{
@@ -192,11 +209,12 @@ body{
 }
 
 .detailFilter{
+  padding-top: 5%;
   width: 35%;
-  padding-top: 5%; 
   float: right;
-  vertical-align:top;
+  background-color: #ffffff;
 }
+
 
 .detailFilter h2{
   float: left;
@@ -207,7 +225,7 @@ body{
   clear: left;
 }
 
-  .detailFilter h3{
+.detailFilter h3{
     float: left;
     color: #000000;
     text-align: left;
@@ -239,7 +257,8 @@ body{
 
 }
 
-#body{  float: left;
+#body{ 
+  float: left;
   font-size: 12pt;
   font-family: 'Barlow', sans-serif;
   color: #000000;
@@ -252,7 +271,7 @@ body{
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #a9a9a9;
-
+  float: left;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -302,7 +321,52 @@ body{
 
 }
 
+.productInfo h2{
+  font-size; 14pt;
+  line-height: 2em;
+
+}
+
 .productInfo p{
   font-size: 14pt;
+
+}
+
+.productInfo th{
+  color: #2E5077;
+  
+}
+
+textarea{
+  font-size: 10pt;
+  font-family: 'Barlow', sans-serif;
+  border-color: #a9a9a9;
+  border-radius: .25;
+  width: 40%;
+}
+
+label{
+  font-size: 12pt;
+  font-weight: bold;
+  line-height: 5em;
+  font-family: 'Barlow', sans-serif;
+}
+
+.cart{
+  background-color: #ffffff;
+  height: 200px;
+}
+.cart button{
+  float: right;
+  color: #ffffff;
+  background-color: #a9a9a9;
+  text-align: left;
+  font-size: 14pt;
+  font-family: 'Barlow', sans-serif;
+  border: none;
+  padding: 5px 15px 5px 15px;
+  margin-right:8px;
+  margin-bottom: 10px;
+  border-radius: 10px;
 
 }
