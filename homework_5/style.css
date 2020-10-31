@@ -32,6 +32,13 @@ body{
   border-top: .25px;
 }
 
+.mainContent table{
+  font-family: 'Barlow', sans-serif;
+  padding: 20px;
+background-color: #ffffff;
+
+}
+
 /* Add a blue background color to the user navigation*/
 .UserNav {
     background-color: #2E5077;
@@ -108,10 +115,11 @@ body{
   }
 
   .productImages img{
+    width: 40%;
     padding-right: 10px;
     padding-bottom: 10px;
     display: inline-block;
-    background-color: #ffffff;
+    background-color: #ffffff
   }
 
   /* Style filtering buttons*/
@@ -210,7 +218,7 @@ body{
 
 .detailFilter{
   padding-top: 5%;
-  width: 35%;
+  width: 30%;
   float: right;
   background-color: #ffffff;
 }
@@ -314,7 +322,6 @@ body{
   padding: 20px;
 
 }
-
 .productInfo h1{
   font-size; 15pt;
   line-height: 2em;
@@ -348,7 +355,6 @@ textarea{
 label{
   font-size: 12pt;
   font-weight: bold;
-  line-height: 5em;
   font-family: 'Barlow', sans-serif;
 }
 
@@ -370,3 +376,6 @@ label{
   border-radius: 10px;
 
 }
+
+#addToCart{
+  color: #FFA630;
