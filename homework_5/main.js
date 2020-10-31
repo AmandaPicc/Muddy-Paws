@@ -42,6 +42,6 @@ function cartPage() {
     //var localProductArr = localStorage.getItem('order')
     //var productArr2 = JSON.parse(localProductArr)
 
-    alert("HI " + productArr.length)
+    alert("Products num: " + productArr.length)
     
 }

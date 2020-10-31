@@ -379,3 +379,6 @@ label{
 
 #addToCart{
   color: #FFA630;
+  clear: both;
+  float: right;
+background-color: #ffffff;
