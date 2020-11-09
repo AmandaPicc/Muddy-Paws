@@ -7,98 +7,95 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script rel="javascript" type="text/javascript" src="main.js"></script>
     </head>
-
-<!--Header containing logo, user navigation, and main navigation -->
-<div class="navigation">
-    <div class = "header">
-        <a href = "homepage.html"> <img style="float: left; paddi%ng: 0px 5px 10px 20px; max-height: 100%;" src="Assets/Muddy_Paws_Logo.png" alt="Muddy Paws Logo"></a>
-    </div>
-    <div class = "UserNav">
-        <a href = "Wishlist.html">Wish List<i class="material-icons">favorite</i></a>
-        <a href = "cart.html" onClick="cartPage()">Cart<i class="material-icons">shopping_basket</i></a>
-        <a href = "stores.html">Stores<i class="material-icons">location_on</i></a>
-        <a href = "SignIn.html">Sign In<i class="material-icons">person</i></a>
-    </div>
-     <div class="MainNav">
-        <a href = "contact.html">Contact</a>
-        <a href = "ProductBrowsingPage.html">Products</a>
-        <a href = "MuddyTales.html">Muddy Tales</a>
-        <a href = "OurStory.html">Our Story</a>
-    </div> 
-</div>
-
-<!--Main Content---->
-    <div class="mainContent">
-        <div class="detailImages">
-                <img src="Assets/MP_Corgi-14.png" alt="Corgi (dog) in harness">
-                <br>
-                <img style="width:8%" src="Assets/MP_Left_Nav.png" alt="left triangle">
-                <img style="width:20%" src="Assets/MP_Product_Shot.png" alt="dog harness">
-                <img style="width:20%" src="Assets/MP_Product_Shot_2.png" alt="dog harness two">
-                <img style="width:20%" src="Assets/MP_Product_Shot_3.png" alt="dog harness three">
-                <img style="width:8%" src="Assets/MP_Right_Nav.png" alt="right triangle">
+    <body onload="loadCartContents()">
+        <!--Header containing logo, user navigation, and main navigation -->
+        <div class="navigation">
+            <div class = "header">
+                <a href = "homepage.html"> <img style="float: left; paddi%ng: 0px 5px 10px 20px; max-height: 100%;" src="Assets/Muddy_Paws_Logo.png" alt="Muddy Paws Logo"></a>
             </div>
+            <div class = "UserNav">
+                <a href = "Wishlist.html">Wish List<i class="material-icons">favorite</i></a>
+                <a id = "cartIcon" href = "cart.html">Cart<i class="material-icons">shopping_basket</i></a>
+                <a href = "stores.html">Stores<i class="material-icons">location_on</i></a>
+                <a href = "SignIn.html">Sign In<i class="material-icons">person</i></a>
+            </div>
+            <div class="MainNav">
+                <a href = "contact.html">Contact</a>
+                <a href = "ProductBrowsingPage.html">Products</a>
+                <a href = "MuddyTales.html">Muddy Tales</a>
+                <a href = "OurStory.html">Our Story</a>
+            </div> 
+        </div>
 
-            <div class="detailFilter">
-                <h1>$35.00 <br>Dog Harness</h1>
-                <p id="body">Whether your scaling a mountain or taking on the city streets, this versitile harness is is the perfect fit for your pup. With an adjustable fit and a variety of colors, this harness is built to last.
-                <br>
-                <br>
-                <img style width="40%" src="Assets/MP_Stars.png" alt="5 star review"> 1252 Reviews
+        <!--Main Content---->
+            <div class="mainContent">
+                <div class="detailImages">
+                        <img src="Assets/MP_Corgi-14.png" alt="Corgi (dog) in harness">
+                        <br>
+                        <img style="width:8%" src="Assets/MP_Left_Nav.png" alt="left triangle">
+                        <img style="width:20%" src="Assets/MP_Product_Shot.png" alt="dog harness">
+                        <img style="width:20%" src="Assets/MP_Product_Shot_2.png" alt="dog harness two">
+                        <img style="width:20%" src="Assets/MP_Product_Shot_3.png" alt="dog harness three">
+                        <img style="width:8%" src="Assets/MP_Right_Nav.png" alt="right triangle">
+                    </div>
+
+                    <div class="detailFilter">
+                        <h1>$35.00 <br>Dog Harness</h1>
+                        <p id="body">Whether your scaling a mountain or taking on the city streets, this versitile harness is is the perfect fit for your pup. With an adjustable fit and a variety of colors, this harness is built to last.
+                        <br>
+                        <br>
+                        <img style width="40%" src="Assets/MP_Stars.png" alt="5 star review"> 1252 Reviews
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p>
+                        <label>Color:</label>
+                        <br>
+                        <br>
+                        <select id="productColor">
+                            <option value="fireOrange">Fire Orange</option>
+                            <option value="crazyberry">Crazyberry</option>
+                            <option value="blackberry">Blackberry</option>
+                            <option value="strawberry">Strawberry</option>
+                        </select>
+                        <br>
+                        <br>
+                        
+                    <label>Size:</label>
+                        <br>
+                        <br>
+                        <form>
+                            <input type="radio" id="xsmall" name="size" value="xsmall">
+                            <label>Extra Small</label>
+                            <input type="radio" id="small" name="size" value="small">
+                            <label>Small</label><br>
+                            <input type="radio" id="medium" name="size" value="medium">
+                            <label>Medium</label>
+                            <input type="radio" id="large" name="size" value="large">
+                            <label>Large</label>
+                        </form> 
+                        <br>
+                        <i> Need help with sizing?</i>
+                        <br>
+                        <br>
+                        <label>Quantity:</label>
+                        <br>
+                        <br>
+                        <input type="number" id="quantity"/>
+                    </div>
+                    <br>
+                    <br>
+                    <input type="button" id="addToCart" value="Add to cart" onclick="addToCart('harness')">
+
                 </p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <p>
-                <label>Color:</label>
-                <br>
-                <br>
-                <select id="productColor">
-                    <option value="fireOrange">Fire Orange</option>
-                    <option value="crazyberry">Crazyberry</option>
-                    <option value="blackberry">Blackberry</option>
-                    <option value="strawberry">Strawberry</option>
-                </select>
-                <br>
-                <br>
-                
-            <label>Size:</label>
-                <br>
-                <br>
-                <form>
-                    <input type="radio" id="xsmall" name="size" value="xsmall">
-                    <label>Extra Small</label>
-                    <input type="radio" id="small" name="size" value="small">
-                    <label>Small</label><br>
-                    <input type="radio" id="medium" name="size" value="medium">
-                    <label>Medium</label>
-                    <input type="radio" id="large" name="size" value="large">
-                    <label>Large</label>
-                </form> 
-                <br>
-                <i> Need help with sizing?</i>
-                <br>
-                <br>
-                <label>Quantity:</label>
-                <br>
-                <br>
-                <select id="quantity">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
-            </div>
-            <br>
-            <br>
-            <input type="button" id="addToCart" value="Add to cart" onclick="addToCart('harness')">
-        </p>
 
 
                 </div>
             </div>
-    </div> 
+        </div> 
+    </body>
 </html>
