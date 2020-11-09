@@ -5,7 +5,9 @@
         <title>Our Story</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script rel="javascript" type="text/javascript" src="main.js"></script>
     </head>
+<body onload="loadCartContents()">
 
 <!--Logo linked to homepage -->
 <header>
@@ -16,7 +18,7 @@
             <div class = "UserDiv">
                 <nav class="UserNav">
                     <a href = "Wishlist.html">Wish List <i class="material-icons">favorite</i></a>
-                    <a href="cart.html">Cart <i class="material-icons">shopping_basket</i></a>
+                    <a id = "cartIcon" href="cart.html">Cart <i class="material-icons">shopping_basket</i></a>
                     <a href = "stores.html">Stores <i class="material-icons">location_on</i></a>
                     <a href = "SignIn.html">Sign In <i class="material-icons">person</i></a>
                     
@@ -54,5 +56,5 @@
     <footer>
         <img src="Assets/MP_Footer.png" alt="Placeholder footer image" style="width:100%">
     </footer>
-
+</body>
 </html>
