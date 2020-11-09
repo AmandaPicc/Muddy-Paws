@@ -1,0 +1,384 @@
+/*--------All Pages--------*/
+
+.header{
+    background-color: #2E5077; 
+    height: 150px;
+    width: 100%;
+}
+
+body{
+  background-color: #2E5077;
+}
+
+.footer{
+  margin-top: 5%;
+  height: 150px;
+}
+
+.mainContent{
+  background-color: #ffffff;
+
+  
+}
+
+.mainContent h3{
+  font-size; 8pt;
+  line-height: 2em;
+
+}
+
+.mainContent hr{
+  border-color: #D7E8BA;
+  border-top: .25px;
+}
+
+.mainContent table{
+  font-family: 'Barlow', sans-serif;
+  padding: 20px;
+background-color: #ffffff;
+
+}
+
+/* Add a blue background color to the user navigation*/
+.UserNav {
+    background-color: #2E5077;
+    float: right;
+    width: 100%;
+}
+
+/* Style main navigation bar links*/
+.UserNav a {
+  background-color: #2E5077;
+  float: right;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 11pt;
+  font-family: 'Barlow', sans-serif;
+  text-decoration: none;
+  clear: left;
+}
+
+/* Change the color of links on hover */
+.UserNav a:hover {
+    color: #FFA630;
+    background-color: #2E5077;
+  }
+
+/* Align Google icons with text */
+.material-icons{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+/*--------Main Site Navigation--------*/
+.MainNav {
+    background-color: #D7E8BA;
+    float: right;
+    width: 100%;
+    border-top: 3px solid #FFA630;
+}
+
+/* Style main navigation bar*/
+.MainNav a {
+    background-color: #D7E8BA;
+    float: right;
+    color: #2E5077;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 14pt;
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+    clear: left;
+}
+
+.MainNav a:hover {
+    color: #FFA630;
+  }
+
+.MainNav a.active {
+    font-weight: bold;
+  }
+
+  .filters{
+    height: 500px;
+    vertical-align:top;
+  }
+
+/*--------PRODUCT BROWSING --------*/
+  /* Style images*/
+  .productImages{
+    display: inline-block;
+    width: 60%;
+    padding:1%;
+  }
+
+  .productImages img{
+    width: 40%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    background-color: #ffffff
+  }
+
+  /* Style filtering buttons*/
+  .productFilter{
+    width: 35%;
+    float: right;
+    vertical-align:top;
+    background-color: #ffffff;
+    clear: both;
+  }
+
+  .productFilter h1{
+    float: left;
+    color: #000000;
+    text-align: left;
+    font-size: 15pt;
+    font-family: 'Barlow', sans-serif;
+    clear: both;
+    padding-bottom: 10px;
+  }
+
+  .productFilter h2{
+    float: left;
+    color: #000000;
+    text-align: left;
+    font-size: 13pt;
+    font-family: 'Barlow', sans-serif;
+    clear: left;
+  }
+  .productFilter button{
+    float: left;
+    color: #ffffff;
+    background-color: #a9a9a9;
+    text-align: left;
+    font-size: 14pt;
+    font-family: 'Barlow', sans-serif;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    margin-right:8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+/* Style sizing help text*/ 
+#help{
+    float: left;
+    font-size: 10pt;
+    font-family: 'Barlow', sans-serif;
+    color: #a9a9a9;
+    clear: both;
+
+}
+/*--------HOMEPAGE --------*/
+
+.homepage{
+  display: inline;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+ /* Style and position images/links*/
+.homepage img{
+  width: 38%;
+  margin: 50px 20px 50px 80px;
+  display: inline;
+  border-radius: 10px;
+  text-align: center;
+
+}
+/*--------PRODUCT DETAILS --------*/
+ /* Style and position images*/
+.detailImages{
+  display: inline-block;
+  width: 60%;
+  padding-top: 5%; padding-bottom: 5%;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.detailImages img{
+  width: 90%;
+  display: inline-block;
+  margin-right: 15px;
+
+}
+
+/* Style filtering buttons and headings*/
+.detailFilter h1{
+  float: left;
+  color: #000000;
+  text-align: left;
+  font-size: 26pt;
+  font-family: 'Barlow', sans-serif;
+  clear: both;
+}
+
+.detailFilter{
+  padding-top: 5%;
+  width: 30%;
+  float: right;
+  background-color: #ffffff;
+}
+
+
+.detailFilter h2{
+  float: left;
+  color: #000000;
+  text-align: left;
+  font-size: 13pt;
+  font-family: 'Barlow', sans-serif;
+  clear: left;
+}
+
+.detailFilter h3{
+    float: left;
+    color: #000000;
+    text-align: left;
+    font-size: 20pt;
+    font-family: 'Barlow', sans-serif;
+    clear: left;
+  }
+
+.productFilter button{
+  float: left;
+  color: #ffffff;
+  background-color: #a9a9a9;
+  text-align: left;
+  font-size: 14pt;
+  font-family: 'Barlow', sans-serif;
+  border: none;
+  padding: 5px 15px 5px 15px;
+  margin-right:8px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+ /* Style help with sizing text*/
+#help{
+  float: left;
+  font-size: 10pt;
+  font-family: 'Barlow', sans-serif;
+  color: #a9a9a9;
+  clear: both;
+
+}
+
+#body{ 
+  float: left;
+  font-size: 12pt;
+  font-family: 'Barlow', sans-serif;
+  color: #000000;
+  clear: both;
+  margin-right: 30px;
+
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #a9a9a9;
+  float: left;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #FFA630;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+
+/*--------PRODUCT CHECKOUT PAGE --------*/
+.productInfo{
+  font-family: 'Barlow', sans-serif;
+  padding: 20px;
+
+}
+.productInfo h1{
+  font-size; 15pt;
+  line-height: 2em;
+
+}
+
+.productInfo h2{
+  font-size; 14pt;
+  line-height: 2em;
+
+}
+
+.productInfo p{
+  font-size: 14pt;
+
+}
+
+.productInfo th{
+  color: #2E5077;
+  
+}
+
+textarea{
+  font-size: 10pt;
+  font-family: 'Barlow', sans-serif;
+  border-color: #a9a9a9;
+  border-radius: .25;
+  width: 40%;
+}
+
+label{
+  font-size: 12pt;
+  font-weight: bold;
+  font-family: 'Barlow', sans-serif;
+}
+
+.cart{
+  background-color: #ffffff;
+  height: 200px;
+}
+.cart button{
+  float: right;
+  color: #ffffff;
+  background-color: #a9a9a9;
+  text-align: left;
+  font-size: 14pt;
+  font-family: 'Barlow', sans-serif;
+  border: none;
+  padding: 5px 15px 5px 15px;
+  margin-right:8px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+}
+
+#addToCart{
+  color: #FFA630;
+  clear: both;
+  float: right;
+background-color: #ffffff;
