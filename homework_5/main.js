@@ -9,6 +9,33 @@ class Product {
     }
 }    
 
+function loadCartContents() {
+    var loadedProductArr = localStorage.getItem('cart')
+    productArr = JSON.parse(loadedProductArr)
+
+    loadCart()
+    UpdateCartNumber(productArr.length)
+}
+
+function loadCart() {
+    var listOfProducts = document.getElementsByClassName('listOfProducts')
+    if(listOfProducts.length < 1) return
+    listOfProducts[0].innerHTML = "";
+    for(var i = 0; i < productArr.length; i++) {
+        var product = productArr[i]
+        listOfProducts[0].innerHTML += '<div>Type: ' + product.type + ' Color: ' + product.color + ' Size: ' + product.size + '</div>'
+        listOfProducts[0].innerHTML += '<span onclick="removeFromCart(' + i + ')">[click to delete]</span>'
+        listOfProducts[0].innerHTML += '<br /><br /><br />'
+    }
+}
+
+function removeFromCart(index) {
+    productArr.splice(index, 1)
+    localStorage.setItem('cart', JSON.stringify(productArr))
+    loadCart()
+    UpdateCartNumber(productArr.length)
+}
+
 function addToCart(type) {
     var color = document.getElementById('productColor').value
     var size = document.getElementsByName('size')
@@ -30,18 +57,11 @@ function addToCart(type) {
         productArr.push(product)
     }
 
+    localStorage.setItem('cart', JSON.stringify(productArr))
     UpdateCartNumber(productArr.length)
 }
 
 function UpdateCartNumber(num) {
-    alert("You have " + num + " item(s) in the cart.")
-}
-
-function cartPage() {
-    //localStorage.setItem('order', JSON.stringify(productArr))
-    //var localProductArr = localStorage.getItem('order')
-    //var productArr2 = JSON.parse(localProductArr)
-
-    alert("Products num: " + productArr.length)
-    
+    var cartCount = document.getElementById('cartIcon')
+    cartCount.innerHTML = 'Cart<i class="material-icons">shopping_basket</i>' + '<sub>' + num + '</sub>' 
 }
