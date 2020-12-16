@@ -13,6 +13,9 @@ class Product {
 function loadCartContents() {
     var loadedProductArr = localStorage.getItem('cart')
     productArr = JSON.parse(loadedProductArr)
+    if(!productArr) {
+        productArr = [];
+    }
 
     loadCart()
     UpdateCartNumber(productArr.length)

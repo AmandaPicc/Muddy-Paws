@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Product Browsing Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script rel="javascript" type="text/javascript" src="main.js"></script>
+    </head>
+<body onload="loadCartContents()">
+<!--Header containing logo, user navigation, and main navigation -->
+<div class="navigation">
+    <div class ="header">
+        <a href="homepage.html"> <img style="float: left; padding: 0px 5px 10px 20px; max-height: 100%;" src="Assets/Muddy_Paws_Logo.png" alt="Muddy Paws Logo"></a>
+    </div>
+    <div class = "UserNav">
+        <a href = "Wishlist.html">Wish List <i class="material-icons">favorite</i></a>
+        <a id = "cartIcon" href = "cart.html">Cart<i class="material-icons">shopping_basket</i></a>
+        <a href = "stores.html">Stores <i class="material-icons">location_on</i></a>
+        <a href = "SignIn.html">Sign In <i class="material-icons">person</i></a>
+    </div>
+     <div class="MainNav">
+        <a href="contact.html">Contact</a>
+        <a href="ProductBrowsingPage.html">Products</a>
+        <a href = "MuddyTales.html">Muddy Tales</a>
+        <a href = "OurStory.html">Our Story</a>
+    </div> 
+</div>
+
+<!--Main Content-->  
+<div>
+    <img style="float: left; width: 100%;" src="Assets/MP_ProductBrowsingMain.png" alt="Man in red jacket and dog outside">
+</div>       
+    
+<div class="mainContent">
+       <div class=productImages>
+            <img src="Assets/MP_CatHarness.png" alt="Cat in harness">
+            <a href="ProductDetailDogHarness.html"><img src="Assets/MP_DogHarness.png" alt="Dog in harness"></a>
+            <img src="Assets/MP_GPSTracker.png" alt="Cat with GPS">
+            <img src="Assets/MP_Water.png" alt="water attachment">
+            <img src="Assets/MP_Food.png" alt="food attachment">
+            <img src="Assets/MP_Backpack.png" alt="cat in backpack">
+        </div>
+
+        <div class="productFilter">
+            <h1> Filter by: </h1>
+            <p>
+                <br>
+                <br>
+                <br>
+                <button type="button">Dog</button>
+                <button type="button">Cat</button>
+            </p>
+            <p>
+                <h2>Size:</h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                    <button type="button">XS</button>
+                    <button type="button">S</button>
+                    <button type="button">M</button>
+                    <button type="button">L</button>
+            <br>
+            <p id="help">Need help with sizing?</p>
+            <br>
+                <h2>Color:</h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button type="button">Fire Orange</button>
+                <button type="button">Crazyberry</button>
+                <button type="button">Blackberry</button>
+                <button type="button">Strawberry</button>       
+        </div>
+</div>
+</body>
+
+    <!--Footer content--> 
+    <footer>
+        <img src="Assets/MP_Footer.png" alt="Placeholder footer image" style="width:100%">
+    </footer>
+
+</html>
